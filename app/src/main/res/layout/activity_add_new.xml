@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNEwActivity">
+
+    <EditText
+        android:id="@+id/titleAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="add Title"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/notesAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/titleAdd"
+        app:layout_constraintStart_toStartOf="@+id/titleAdd"
+        app:layout_constraintTop_toBottomOf="@+id/titleAdd" />
+
+    <EditText
+        android:id="@+id/dateTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/notesAdd"
+        app:layout_constraintStart_toStartOf="@+id/notesAdd"
+        app:layout_constraintTop_toBottomOf="@+id/notesAdd" />
+
+    <Button
+        android:id="@+id/saveNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Save"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/dateTask"
+        app:layout_constraintTop_toBottomOf="@+id/dateTask" />
+
+    <Button
+        android:id="@+id/backNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Home"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/saveNew"
+        app:layout_constraintEnd_toStartOf="@+id/saveNew" />
+</android.support.constraint.ConstraintLayout>
